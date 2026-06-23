@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kashish Fatima – Computer Science Student, Graphic Designer & Social Media Manager based in Nawabshah, Sindh. Explore her portfolio of brand identity, poster design, and digital marketing work." />
+  <meta name="keywords" content="Kashish Fatima, Graphic Designer, Social Media Manager, Portfolio, Nawabshah, Pakistan" />
+  <meta name="author" content="Kashish Fatima" />
+  <meta property="og:title" content="Kashish Fatima | Graphic Designer & CS Student" />
+  <meta property="og:description" content="Portfolio of Kashish Fatima – Graphic Designer, Social Media Manager & CS Student." />
+  <meta property="og:type" content="website" />
+  <title>Kashish Fatima | Graphic Designer & CS Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__ring"></div>
+      <span class="loader__text">KF</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Particles Canvas -->
+  <canvas id="particles" class="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">KF<span class="gold">.</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#services" class="nav__link">Services</a></li>
+      <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+      <li><a href="#experience" class="nav__link">Experience</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <span class="theme-toggle__icon">☀</span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-text" aria-hidden="true">KASHISH</div>
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">Based in Nawabshah, Sindh · Available for freelance</p>
+      <h1 class="hero__name">Kashish<br /><em>Fatima</em></h1>
+      <p class="hero__title">Computer Science Student <span class="gold">·</span> Graphic Designer <span class="gold">·</span> Social Media Manager</p>
+      <p class="hero__tagline">Turning ideas into visuals that speak before words do.</p>
+      <div class="hero__ctas">
+        <a href="#portfolio" class="btn btn--primary">View Portfolio</a>
+        <a href="#contact" class="btn btn--ghost">Contact Me</a>
+        <a href="Kashish.pdf" download class="btn btn--outline">↓ Resume</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__label reveal">About</div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <h2 class="section__title">Designing with<br /><em>purpose & precision</em></h2>
+          <p>I'm a first-year Computer Science student at Shaheed Benazir Bhutto University with an A1-grade Associate Degree in Science. Over the past two years I've been freelancing full-time — managing social media accounts, building brand identities, and creating digital content that converts.</p>
+          <p>My work sits at the intersection of design and strategy. I believe the most impactful visuals aren't just beautiful — they tell a story and drive action.</p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num">2<span class="gold">+</span></span>
+              <span class="stat__label">Years Freelance</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">50<span class="gold">+</span></span>
+              <span class="stat__label">Projects Done</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">4</span>
+              <span class="stat__label">Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual reveal">
+          <div class="about__card glass">
+            <div class="about__badge">
+              <span class="gold">✦</span> Available for work
+            </div>
+            <div class="about__info-list">
+              <div class="about__info-item">
+                <span class="about__info-label">Location</span>
+                <span>Nawabshah, Sindh</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Degree</span>
+                <span>BSc Computer Science</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Freelance</span>
+                <span>Upwork &amp; Instagram</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Design Tools</span>
+                <span>Canva · Adobe Suite</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Focus</span>
+                <span>Brand Identity · UI · Content</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__label reveal">Skills</div>
+      <h2 class="section__title reveal">What I bring<br /><em>to every project</em></h2>
+      <div class="skills__grid">
+
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title"><span class="gold">01</span> Design</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span class="skill-bar__label">Adobe Photoshop</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="85"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">Canva</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="95"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">Brand Identity Design</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="88"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">Poster Design</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="92"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">Logo Design</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="80"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title"><span class="gold">02</span> Technical</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span class="skill-bar__label">HTML</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="90"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">CSS</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="85"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">JavaScript</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="65"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">C++ / SQL</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="70"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">Responsive Web Design</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="80"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title"><span class="gold">03</span> Marketing</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span class="skill-bar__label">Social Media Marketing</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="93"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">Content Creation</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="90"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">Digital Marketing</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="85"></div></div></div>
+            <div class="skill-bar"><span class="skill-bar__label">Freelance Management</span><div class="skill-bar__track"><div class="skill-bar__fill" data-w="88"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__label reveal">Services</div>
+      <h2 class="section__title reveal">How I can<br /><em>help you</em></h2>
+      <div class="services__grid">
+        <div class="service-card glass reveal">
+          <div class="service-card__icon">✦</div>
+          <h3>Graphic Design</h3>
+          <p>Posters, banners, social media graphics, and visual assets that stop the scroll and communicate instantly.</p>
+        </div>
+        <div class="service-card glass reveal">
+          <div class="service-card__icon">◈</div>
+          <h3>Social Media Management</h3>
+          <p>End-to-end management of Instagram, Facebook, and LinkedIn — content calendars, captions, and growth strategy.</p>
+        </div>
+        <div class="service-card glass reveal">
+          <div class="service-card__icon">◇</div>
+          <h3>Brand Identity Design</h3>
+          <p>Logos, color palettes, typography guides, and brand kits that give your business a coherent, memorable visual language.</p>
+        </div>
+        <div class="service-card glass reveal">
+          <div class="service-card__icon">⬡</div>
+          <h3>Web Design</h3>
+          <p>Clean, responsive HTML/CSS layouts designed with both aesthetics and usability in mind.</p>
+        </div>
+        <div class="service-card glass reveal">
+          <div class="service-card__icon">✧</div>
+          <h3>Content Creation</h3>
+          <p>Captions, campaign ideas, and visual storytelling strategies that build audience trust and drive engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+ <section class="section portfolio" id="portfolio">
+  <div class="container">
+    <div class="section__label reveal">Portfolio</div>
+    <h2 class="section__title reveal">Selected<br /><em>works</em></h2>
+
+    <div class="portfolio__filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="social">Social Media</button>
+      <button class="filter-btn" data-filter="brand">Brand Design</button>
+      <button class="filter-btn" data-filter="poster">Poster</button>
+      <button class="filter-btn" data-filter="product">Product Ads</button>
+    </div>
+
+    <div class="portfolio__grid" id="portfolioGrid">
+
+      <div class="port-item reveal" data-cat="poster">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p1.png" alt="Sports Player Poster" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Poster Design</span>
+            <h4>Sports Player Poster</h4>
+            <p>PSL-style athlete poster with cinematic lighting</p>
+            <button class="port-item__view" data-modal="m1">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="product">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p2.png" alt="Miss Rose blush product advertisement" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Product Ad</span>
+            <h4>Miss Rose Liquid Blush</h4>
+            <p>Minimalist beauty product campaign</p>
+            <button class="port-item__view" data-modal="m2">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="product">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p3.png" alt="Pepsi product advertisement" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Product Ad</span>
+            <h4>Pepsi — Fizz. Refresh. Bliss.</h4>
+            <p>High-energy FMCG campaign poster</p>
+            <button class="port-item__view" data-modal="m3">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="poster">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p4.jpeg" alt="Carlos Sainz F1 Ferrari poster" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Poster Design</span>
+            <h4>Carlos Sainz — Ferrari F1</h4>
+            <p>Formula 1 driver tribute poster</p>
+            <button class="port-item__view" data-modal="m4">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="social">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p5.jpeg" alt="Wednesday Season 2 poster" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Social Media</span>
+            <h4>Wednesday Season 2</h4>
+            <p>Fan-made Netflix series promotional graphic</p>
+            <button class="port-item__view" data-modal="m5">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="product">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p6.jpeg" alt="Apple AirPods Max product poster" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Product Ad</span>
+            <h4>Apple AirPods Max</h4>
+            <p>Minimal tech product advertisement</p>
+            <button class="port-item__view" data-modal="m6">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="product">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p7.jpeg" alt="Porsche 911 GT3RS poster" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Product Ad</span>
+            <h4>Porsche 911 GT3RS</h4>
+            <p>Luxury automotive poster design</p>
+            <button class="port-item__view" data-modal="m7">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="product">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p8.jpeg" alt="Jade Sunscreen SPF 50" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Product Ad</span>
+            <h4>Jade Sunscreen SPF 50</h4>
+            <p>Vibrant skincare product campaign</p>
+            <button class="port-item__view" data-modal="m8">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="brand">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p9.jpeg" alt="Zaviha Fragrance poster" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Brand Design</span>
+            <h4>Zaviha Fragrance — Ivory</h4>
+            <p>Luxury perfume brand visual identity</p>
+            <button class="port-item__view" data-modal="m9">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="social">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p10.jpeg" alt="Fashion Festa poster" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Social Media</span>
+            <h4>Fashion Festa — Iconic</h4>
+            <p>Luxury eyewear event promotional poster</p>
+            <button class="port-item__view" data-modal="m10">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-item reveal" data-cat="brand">
+        <div class="port-item__img-wrap">
+          <img src="assets/img/p11.jpeg" alt="Alhumd Nuts packaging design" loading="lazy" />
+          <div class="port-item__overlay">
+            <span class="port-item__tag">Brand Design</span>
+            <h4>Alhumd Nuts — Packaging</h4>
+            <p>Premium food packaging design</p>
+            <button class="port-item__view" data-modal="m11">View</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Portfolio Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal glass" id="modal">
+      <button class="modal__close" id="modalClose">✕</button>
+      <img src="" alt="" class="modal__img" id="modalImg" />
+      <div class="modal__info">
+        <span class="modal__tag" id="modalTag"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience Section -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__label reveal">Experience</div>
+      <h2 class="section__title reveal">Two years of<br /><em>real-world work</em></h2>
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"><span class="gold">✦</span></div>
+          <div class="timeline__content glass">
+            <span class="timeline__date">2023 – Present</span>
+            <h3>Freelance Social Media Manager</h3>
+            <p class="timeline__org">Upwork &amp; Instagram</p>
+            <ul class="timeline__list">
+              <li>Managed and grew social accounts for clients across multiple industries</li>
+              <li>Developed content strategies driving measurable engagement increases</li>
+              <li>Produced graphics, captions, and campaign ideas end-to-end</li>
+              <li>Analysed metrics to continuously refine marketing strategy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"><span class="gold">◈</span></div>
+          <div class="timeline__content glass">
+            <span class="timeline__date">2023 – Present</span>
+            <h3>Graphic Designer (Part-Time)</h3>
+            <p class="timeline__org">Upwork</p>
+            <ul class="timeline__list">
+              <li>Designed social posts, banners, logos, and promotional materials</li>
+              <li>Developed visual brand identities aligned with client goals</li>
+              <li>Used Canva and Adobe to produce professional output</li>
+              <li>Maintained design consistency across all project deliverables</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"><span class="gold">◇</span></div>
+          <div class="timeline__content glass">
+            <span class="timeline__date">2024</span>
+            <h3>University Design Projects — Award Winner</h3>
+            <p class="timeline__org">Shaheed Benazir Bhutto University</p>
+            <ul class="timeline__list">
+              <li>Recognised for outstanding creative output in university design projects</li>
+              <li>Consistently delivered work praised by faculty and peers alike</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section certs" id="certs">
+    <div class="container">
+      <div class="section__label reveal">Certifications</div>
+      <h2 class="section__title reveal">Credentials &amp;<br /><em>learning</em></h2>
+      <div class="certs__grid">
+        <div class="cert-card glass reveal">
+          <div class="cert-card__logo">G</div>
+          <div class="cert-card__body">
+            <h4>Google Prompting Essentials</h4>
+            <p>Google · Dec 2025</p>
+          </div>
+          <span class="cert-card__badge">Verified</span>
+        </div>
+        <div class="cert-card glass reveal">
+          <div class="cert-card__logo">G</div>
+          <div class="cert-card__body">
+            <h4>Introduction to Programming Using Python</h4>
+            <p>Google · Jul 2025</p>
+          </div>
+          <span class="cert-card__badge">Verified</span>
+        </div>
+        <div class="cert-card glass reveal">
+          <div class="cert-card__logo">C</div>
+          <div class="cert-card__body">
+            <h4>Graphic Designer</h4>
+            <p>Coursera · 2024</p>
+          </div>
+          <span class="cert-card__badge">Verified</span>
+        </div>
+        <div class="cert-card glass reveal">
+          <div class="cert-card__logo">P</div>
+          <div class="cert-card__body">
+            <h4>Web Developer</h4>
+            <p>PITP IBA · Aug 2025</p>
+          </div>
+          <span class="cert-card__badge">Verified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section__label reveal">Education</div>
+      <h2 class="section__title reveal">Academic<br /><em>foundation</em></h2>
+      <div class="edu__grid">
+        <div class="edu-card glass reveal">
+          <span class="edu-card__year">2025 – 2029</span>
+          <h3>BSc Computer Science</h3>
+          <p class="edu-card__inst">Shaheed Benazir Bhutto University</p>
+          <p>Currently pursuing a Bachelor's degree with focus on software development and problem-solving.</p>
+        </div>
+        <div class="edu-card glass reveal">
+          <span class="edu-card__year">2024 – 2025</span>
+          <h3>Associate Degree in Science</h3>
+          <p class="edu-card__inst">Shah Abdul Latif University</p>
+          <p>Graduated with an <strong class="gold">A1 Grade</strong> — top distinction for academic excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section__label reveal">Testimonials</div>
+      <h2 class="section__title reveal">What clients<br /><em>say</em></h2>
+      <div class="testimonials__slider" id="testimonialSlider">
+        <div class="testimonial glass active">
+          <p class="testimonial__quote">"Kashish completely transformed our brand's social media presence. Engagement tripled in three months. Her designs are both beautiful and strategic."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">A</div>
+            <div>
+              <strong>Ahmed R.</strong>
+              <span>E-commerce Brand Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial glass">
+          <p class="testimonial__quote">"Working with Kashish on our product packaging was a joy. She understood our vision immediately and delivered beyond expectations. Highly recommended."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">S</div>
+            <div>
+              <strong>Sara M.</strong>
+              <span>Startup Founder</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial glass">
+          <p class="testimonial__quote">"Fast, professional, and incredibly talented. Our brand identity kit was delivered ahead of schedule and the quality was outstanding."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">U</div>
+            <div>
+              <strong>Usman K.</strong>
+              <span>Marketing Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__dots" id="testimonialDots">
+        <button class="dot active" data-idx="0"></button>
+        <button class="dot" data-idx="1"></button>
+        <button class="dot" data-idx="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__label reveal">Contact</div>
+      <h2 class="section__title reveal">Let's work<br /><em>together</em></h2>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <p>Whether you need a brand identity, a social media strategy, or a full design system — I'm open to new projects.</p>
+          <div class="contact__links">
+            <a href="mailto:kashishpathan000@gmail.com" class="contact__link">
+              <span class="contact__link-icon">✉</span>
+              <span>kashishpathan000@gmail.com</span>
+            </a>
+            <a href="tel:+923153460654" class="contact__link">
+              <span class="contact__link-icon">✆</span>
+              <span>+92-315-3460654</span>
+            </a>
+            <a href="https://github.com/kashishpathan01" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <span class="contact__link-icon">⌨</span>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <span class="contact__link-icon">in</span>
+              <span>LinkedIn</span>
+            </a>
+				<a href="https://www.instagram.com/graphicsby_kp/" target="_blank" class="contact__link">
+	<span class="contact__link-icon"><i class="fa-brands fa-instagram"></i></span>
+	<span>Instagram</span>
+	</a>
+           <a href="https://www.upwork.com/freelancers/~01e448658bd492f2c3" target="_blank" rel="noopener noreferrer" class="contact__link">
+			<span class="contact__link-icon">↑</span>
+			<span>Upwork Profile</span>
+			</a>
+          </div>
+        </div>
+        <form class="contact__form glass reveal" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="Project type / inquiry" />
+          </div>
+          <div class="form-field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#hero" class="footer__logo">KF<span class="gold">.</span></a>
+        <p class="footer__copy">© 2026 Kashish Fatima · Designed &amp; Built with passion</p>
+        <a href="#hero" class="footer__back">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal data -->
+<script>
+    window.MODAL_DATA = {
+      m1: { src: "assets/img/p1.png", tag: "Poster Design", title: "Sports Player Poster", desc: "..." },
+      m2: { src: "assets/img/p2.png", tag: "Product Ad", title: "Miss Rose Liquid Blush", desc: "..." },
+      m3: { src: "assets/img/p3.png", tag: "Product Ad", title: "Pepsi — Fizz", desc: "..." },
+      m4: { src: "assets/img/p4.jpeg", tag: "Poster Design", title: "Carlos Sainz", desc: "..." },
+      m5: { src: "assets/img/p5.jpeg", tag: "Social Media", title: "Wednesday Season 2", desc: "..." },
+      m6: { src: "assets/img/p6.jpeg", tag: "Product Ad", title: "Apple AirPods Max", desc: "..." },
+      m7: { src: "assets/img/p7.jpeg", tag: "Product Ad", title: "Porsche 911 GT3RS", desc: "..." },
+      m8: { src: "assets/img/p8.jpeg", tag: "Product Ad", title: "Jade Sunscreen SPF 50", desc: "..." },
+      m9: { src: "assets/img/p9.jpeg", tag: "Brand Design", title: "Zaviha Fragrance", desc: "..." },
+      m10: { src: "assets/img/p10.jpeg", tag: "Social Media", title: "Fashion Festa", desc: "..." },
+      m11: { src: "assets/img/p11.jpeg", tag: "Brand Design", title: "Alhumd Nuts", desc: "..." },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("h8Wyy3e9eh2uBM3Tz");
+  })();
+</script>
+  <script src="main.js"></script>
+</body>
+</html>
